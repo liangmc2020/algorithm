@@ -7,6 +7,10 @@ class Solution:
             if target - num in nums:
                 if num*2 == target and nums.count(num) == 1:
                     continue
+                elif num*2 == target:
+                    i = nums.index(num)
+                    j = nums.index(num,i+1,len(nums))
+                    return [i,j]
                 else:
                     return [nums.index(num),nums.index(target - num)]
             else:
