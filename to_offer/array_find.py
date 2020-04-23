@@ -5,13 +5,14 @@
 """
 
 # -*- coding:utf-8 -*-
+
+
 class Solution:
     # array 二维列表
     def Find(self, target, array):
         # write code here
-        for a in arry:
+        for a in array:
             for num in a:
                 if num == target:
                     return True
-        
         return False
